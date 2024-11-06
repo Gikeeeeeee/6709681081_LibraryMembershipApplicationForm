@@ -199,5 +199,26 @@ body {
 .container .register .info .accept select {
     width: 35%;
 }
+/*Summit Button*/
+.summit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summit input {
+    padding: 15px 25px;
+    border-radius: 45px;
+    background-color: var(--bg-color);
+    border: none;
+    color: var(--title-color);
+    font-family: "Playwrite GB S", cursive;
+    transition: 0.3s ease;
+}
+
+.summit input:hover {
+    transform: scale(1.2);
+    background-color: var(--sub-bg-color);
+    box-shadow: 0 0 5px rgba(123, 122, 122, 0.5);
+}
 
 /* =========regiter style end========= */

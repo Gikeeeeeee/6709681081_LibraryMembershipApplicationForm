@@ -12,6 +12,10 @@
 <body>
     <div class="container">
         <div class="content">
+            <div class="text">
+                <h1>Welcome</h1>
+                <p>Please fill the box to register</p>
+            </div>
         </div>
         <div class="register">
             <form>
@@ -31,11 +35,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input class="inputbox" type="text" id="email" placeholder="Email">
-                </div>
                 <div class="info">
+                    <div class="email">
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input class="inputbox" type="text" id="email" placeholder="Email">
+                    </div>
+
                     <div class="student_id">
                         <label for="info">Student Id<span class="required">*</span></label><br>
                         <input class="inputbox" type="text" id="student_id" placeholder="Student Id">

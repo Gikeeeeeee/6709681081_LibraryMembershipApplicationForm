@@ -16,6 +16,10 @@
     --tex-size: 20px;
 }
 
+.hidden {
+    display: none !important;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -44,19 +48,136 @@ body {
     background-image: url(resources/libary_img.jpg);
     background-size: cover;
     background-position: center;
+    line-height: 2;
 }
 
 .container .content h1 {
     font-size: var(--title-size);
     color: var(--sub-bg-color);
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+}
+
+.container .content p {
+    font-size: var(--sub-bg-color);
+    color: var(--sub-bg-color);
+    font-family: "Chonburi", serif;
+    font-weight: normal;
 }
 /* =========content style end========= */
 /* =========regiter style start========= */
 .container .register {
     flex: 0 0 60%;
     width: 100%;
-    max-width: 60%;
-    background-color: var(--sub-bg-color);
-    opacity: 50%;
+    max-width: 60%; 
+    background-color: var(--sub-bg-color);  
+    padding: 30px;
+    font-family: "Playwrite GB S", cursive;
 }
+
+.container .register h1 {
+    color: var(--title-color);
+    font-size: var(--title-size);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .register label {
+    color: var(--text-color);
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.container .register .required {
+    color: #cc0c0c;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.container .register .inputbox,
+.container .register select,
+.container .register input[type="date"] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 20px;
+    background-color: var(--title-color);
+    border-radius: 40px;
+    font-size: var(--text-size);
+    color: var(--text-color);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.container .register .inputbox::placeholder {
+    color: var(--text-color);
+}
+
+
+.container .register .inputbox:hover,
+.container .register select:hover,
+.container .register input[type="date"]:hover {
+    background-color: #333;
+}
+
+.container .register .inputbox:focus,
+.container .register select:focus,
+.container .register input[type="date"]:focus {
+    background-color: #444;
+    outline: none;
+    border: 1px solid #555;
+}
+
+.container .register .name-input {
+    display: flex;
+    gap: 10px;
+}
+
+.container .register .info {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.container .register .info .student_id {
+    flex: 0 0 50%;
+    width: 100%;
+    max-width: calc(50% - 10px);
+}
+
+.container .register .info .gender {
+    flex: 0 0 25%;
+    width: 100%;
+    max-width: calc(25% - 10px);
+}
+
+.container .register .info .birthday {
+    flex: 0 0 25%;
+    width: 100%;
+    max-width: calc(25% - 10px);
+}
+
+.container .register .info .faculty {
+    flex: 0 0 60%;
+    width: 100%;
+    max-width: calc(60% - 10px);
+}
+
+.container .register .info .book {
+    flex: 0 0 40%;
+    width: 100%;
+    max-width: calc(40% - 10px);
+}
+
+.container .register .info .accept {
+    flex: 0 0 60%;
+    width: 100%;
+    max-width: calc(60% - 10px);
+}
+
+.container .register .info .accept select {
+    width: 35%;
+}
+
 /* =========regiter style end========= */

@@ -110,23 +110,27 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.container .register .inputbox::placeholder {
-    color: var(--text-color);
+.container .register .inputbox::placeholder,
+.container .register select,
+.container .register input[type="date"]
+ {
+    color: var(--sub-bg-color);
 }
 
 
 .container .register .inputbox:hover,
 .container .register select:hover,
 .container .register input[type="date"]:hover {
-    background-color: #333;
+    background-color: var(--text-color);
 }
 
 .container .register .inputbox:focus,
 .container .register select:focus,
 .container .register input[type="date"]:focus {
-    background-color: #444;
+    background-color: var(--bg-color);
+    color: var(--sub-bg-color);
     outline: none;
-    border: 1px solid #555;
+    border: 1px solid var(--title-color);
 }
 
 .container .register .name-input {

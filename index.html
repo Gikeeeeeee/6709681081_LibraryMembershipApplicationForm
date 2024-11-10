@@ -52,7 +52,7 @@
                             <option value="Male">Male</option>
                             <option value="Female">female</option>
                             <option value="LGBTQIA+">LGBTQIA+</option>
-                            <option value="none">Prefer to not answer</option>
+                            <option value="none">I prefer not to say</option>
                         </select>
                     </div>
                     <div class="birthday">
@@ -100,10 +100,17 @@
                     </div>
 
                     <div class="accept">
-                        <label for="News_Acception">Do you accept new or information from email?</label>
-                        <select name="acception" id="acception">
-                            <option value="accept">Accept</option>
-                            <option value="No">Not</option>
+                        <label for="News_Acception">Do you accept new or information from email?</label><br>
+                        <div class="choice">
+                            <div class="option">
+                                <input type="radio" id="accept" name="accept" value="HTML">
+                                <label for="accept">Accept</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="not_accept" name="accept" value="HTML">
+                                <label for="accept">Not</label>
+                            </div>
+                        </div>
                         </select>
                     </div>
                 </div>

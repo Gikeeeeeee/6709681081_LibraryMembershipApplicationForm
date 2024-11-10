@@ -27,7 +27,8 @@ body {
     width: 100%;
     height: 100vh;
     padding: 25px;
-    background-color: var(--bg-color);
+    background: rgb(121, 30, 9);
+    background: linear-gradient(122deg, rgba(121, 30, 9, 1) 8%, rgba(218, 106, 89, 1) 48%, rgba(121, 30, 9, 1) 84%);
 }
 
 .container {
@@ -72,19 +73,22 @@ body {
     font-family: "Chonburi", serif;
     font-weight: normal;
 }
+
 /* =========content style end========= */
 /* =========regiter style start========= */
 .container .register {
     flex: 0 0 60%;
     width: 100%;
-    max-width: 60%; 
-    background-color: var(--sub-bg-color);  
+    max-width: 60%;
+    background-color: var(--sub-bg-color);
     padding: 30px;
     font-family: "Playwrite GB S", cursive;
 }
+
 .container .register .th {
     font-family: "Chonburi", serif;
 }
+
 .container .register h1 {
     color: var(--title-color);
     font-size: var(--title-size);
@@ -123,8 +127,7 @@ body {
 
 .container .register .inputbox::placeholder,
 .container .register select,
-.container .register input[type="date"]
- {
+.container .register input[type="date"] {
     color: var(--sub-bg-color);
 }
 
@@ -151,10 +154,11 @@ body {
 
 .container .register .info {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 10px;
 }
-.container .register  .email {
+
+.container .register .email {
     flex: 0 0 50%;
     width: 100%;
     max-width: calc(50% - 10px);
@@ -192,13 +196,33 @@ body {
 
 .container .register .info .accept {
     flex: 0 0 65%;
-    width: 100%;
     max-width: calc(65% - 10px);
+    margin-bottom: 15px;
 }
 
-.container .register .info .accept select {
-    width: 35%;
+.container .register .info .accept .choice {
+    display: flex;
+    gap: 20px;
+    margin-left: 25px;
 }
+
+.container .register .info .accept .option {
+    display: flex;
+    align-items: center;
+}
+
+.container .register .info .accept label {
+    margin-left: 5px;
+    color: var(--text-color);
+    font-size: var(--text-size);
+}
+
+.container .register .info .accept input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 /*Summit Button*/
 .summit {
     display: flex;
